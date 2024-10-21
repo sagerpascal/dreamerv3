@@ -12,3 +12,4 @@ einops==0.8.0
 jaxlib==0.4.34
 optax==0.2.3
 tensorflow_probability==0.24.0
+crafter==1.8.3
