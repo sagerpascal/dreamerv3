@@ -33,6 +33,7 @@ fi
 # Install and update...
 pip install jax[cuda12]
 pip install jax[cuda12_pip]
+pip install wandb[media]
 
 # read requirements.txt file and store valid packages into list
 declare -A packages
