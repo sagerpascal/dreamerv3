@@ -1,0 +1,16 @@
+jax[cuda12]
+cloudpickle
+colored
+gputil
+msgpack
+numpy
+psutil
+ruamel.yaml
+tensorflow-cpu
+zmq
+chex
+einops
+jax[cuda12_pip]
+jaxlib
+optax
+tensorflow_probability
