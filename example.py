@@ -34,7 +34,7 @@ def main():
         embodied.logger.TerminalOutput(config.filter),
         embodied.logger.JSONLOutput(logdir, 'metrics.jsonl'),
         embodied.logger.TensorBoardOutput(logdir),
-        # embodied.logger.WandbOutput(logdir.name, config=config),
+        embodied.logger.WandbOutput(logdir.name, config=config),
     ])
 
   def make_replay(config):
