@@ -1,10 +1,11 @@
+import os
 import warnings
 from functools import partial as bind
 
 import dreamerv3
 import embodied
 
-os.eos.environ["WANDB_DIR"] = "/scratch/wandb"
+os.environ["WANDB_DIR"] = "/scratch/wandb"
 
 warnings.filterwarnings('ignore', '.*truncated to dtype int32.*')
 
