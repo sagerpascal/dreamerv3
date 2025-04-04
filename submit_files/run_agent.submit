@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --time=1440
+#SBATCH --job-name=dreamerv3
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --gres=gpu:1
+#SBATCH --mem=100G
+#SBATCH --account=cai_cv
+#SBATCH --partition=gpu_top
+#SBATCH --output=/cluster/home/sage/temp/dreamer/agent/%j_%N.out
+#SBATCH --error=/cluster/home/sage/temp/dreamer/agent/%j_%N.err
+
+# define python virtualenv name
+env_name="dreamerv3"
+
+# load modules
+module load python/3.11.9
+VENV=$env_name module load uv/0.6.12
+
+export PYTHONPATH="${PYTHONPATH}:/cluster/home/sage/dreamerv3/dreamerv3"
+
+# run the workload
+uv run dreamerv3/main.py logdir ~/logdir/{timestamp} configs crafter run.train_ratio 32
