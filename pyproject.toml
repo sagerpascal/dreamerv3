@@ -10,6 +10,7 @@ dependencies = [
     "av>=14.2.0",
     "chex>=0.1.89",
     "colored-traceback>=0.4.2",
+    "crafter>=1.8.3",
     "einops>=0.8.1",
     "elements>=3.19.1",
     "google-resumable-media>=2.7.2",
@@ -23,4 +24,5 @@ dependencies = [
     "portal>=3.5.0",
     "scope>=0.4.4",
     "tqdm>=4.67.1",
+    "wandb[media]>=0.19.9",
 ]
