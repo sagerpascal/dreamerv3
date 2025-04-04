@@ -1,0 +1,26 @@
+[project]
+name = "dreamerv3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ale-py==0.9.0",
+    "autorom[accept-rom-license]==0.6.1",
+    "av>=14.2.0",
+    "chex>=0.1.89",
+    "colored-traceback>=0.4.2",
+    "einops>=0.8.1",
+    "elements>=3.19.1",
+    "google-resumable-media>=2.7.2",
+    "granular>=0.20.3",
+    "ipdb>=0.13.13",
+    "jax==0.4.33",
+    "jaxtyping>=0.3.1",
+    "ninjax>=3.5.1",
+    "numpy<2",
+    "optax>=0.2.4",
+    "portal>=3.5.0",
+    "scope>=0.4.4",
+    "tqdm>=4.67.1",
+]
